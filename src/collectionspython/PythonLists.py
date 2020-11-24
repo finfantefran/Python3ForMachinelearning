@@ -73,6 +73,44 @@ nums = [1, 2, 3, 4]
 cubes = [n * n * n for n in nums]
 print(cubes)
 
+""" Iterando sobre varias listas"""
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+nuevaLista = [a * b for a in lista1 for b in lista2]
+print(nuevaLista)
+
+# devolviendo una lista de listas
+nuevaLista = [[x, 2 * x] for x in lista1]
+print(nuevaLista)
+
+# producto entre dos listas  a pares
+nuevaLista = [lista1[i] * lista2[i] for i in range(len(lista1))]
+print(nuevaLista)
+
+# remove(value to remove)
+lista1.remove(1)
+# count(value to count)
+lista1.count(1)
+# append(value to append), se anhada al final
+lista1.append(1)
+# index(value to get the index), el primero que encuentra si hay mas de uno
+lista1.index(1)
+# pop(), eliminar el valor de la posicion final 
+lista1.pop()
+print(lista1)
+
+
+""" STACK y QUEUE"""
+# FIFO, first in, first out
+lista=[1,2,3]
+lista.append(4)
+lista.pop()
+
+# COLA, first in, last out
+
+lista=[1,2,3]
+lista.insert(0, 0) # es bastante lento, mejor utilizar collection.deque
+lista.pop()
 
 
 
